@@ -8,6 +8,9 @@ import javafx.scene.control.Button;
 import javafx.scene.control.ComboBox;
 import javafx.scene.control.TextArea;
 
+import java.util.HashMap;
+import java.util.Map;
+
 public class Controller {
 
     public ComboBox comboBoxPattern;
@@ -30,25 +33,12 @@ public class Controller {
     @FXML
     public void initialize() {
 
-        Test test = new Test();
+        Map<Integer, String> patternsList = this.generator.getPatterns();
 
-        try {
+        for ( Integer key: patternsList.keySet() ) {
 
-            test.testMethodgetPatterns2();
-            test.testMethodGetLang2();
-            test.testMethodGenerate();
-            test.testControllerFieldSelf();
-            test.testController();
-
-        } catch ( Exception ex ){
-
-            ex.printStackTrace();
-
+            comboBoxPattern.getItems().add(key, patternsList.get( key ));
         }
-
-        ObservableList<String> langs = FXCollections.observableArrayList("Адаптер",
-                "Декоратор", "Заместитель");
-        comboBoxPattern.setItems(langs);
 
     }
 
@@ -68,6 +58,10 @@ public class Controller {
 
 
     public void generateButtonAction(ActionEvent actionEvent) {
+        //TODO Добавить функционал в метод
+    }
 
+    public ComboBox getComboBoxPattern() {
+        return comboBoxPattern;
     }
 }

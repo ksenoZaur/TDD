@@ -8,17 +8,22 @@ import java.nio.charset.StandardCharsets;
 import java.nio.file.Files;
 import java.nio.file.Paths;
 import java.util.Map;
+import org.junit.jupiter.api.Assertions;
+import org.junit.jupiter.api.Test;
 
-public class Test {
+class TestGeneratorAndController {
 
+    @Test
     private String readFromFile( String path ){
         String text = null;
 
         try {
+
             text = new String(Files.readAllBytes(Paths.get(path)), StandardCharsets.UTF_8);
             text = text.replaceAll("\\n", "");
             text = text.replaceAll("\\r", "");
             text = text.replaceAll("\\t", "");
+
         } catch (IOException e) {
             e.printStackTrace();
         }
@@ -26,12 +31,14 @@ public class Test {
         return text;
     }
 
+    @Test
     public void testCreateObject(){
 
         Generator object = new Generator();
 
     }
 
+    @Test
     public void testMethodgetPatterns(){
 
         Generator object = new Generator();
@@ -40,6 +47,7 @@ public class Test {
 
     }
 
+    @Test
     public void testMethodgetPatterns2() throws Exception{
 
         Generator object = new Generator();
@@ -53,6 +61,7 @@ public class Test {
 
     }
 
+    @Test
     public void testMethodGetLang(){
 
         Generator object = new Generator();
@@ -61,6 +70,7 @@ public class Test {
 
     }
 
+    @Test
     public void testMethodGetLang2() throws Exception{
 
         Generator object = new Generator();
@@ -74,6 +84,7 @@ public class Test {
 
     }
 
+    @Test
     public String testMethodGenerate() throws Exception{
 
         Generator object = new Generator();
@@ -92,6 +103,7 @@ public class Test {
 
     }
 
+    @Test
     public void testControllerFieldSelf() throws Exception{
 
         String code = this.testMethodGenerate();
@@ -106,7 +118,22 @@ public class Test {
 
     }
 
+    @Test
     public void testController(){
+
         Controller.self.getGenerateCode().getOnAction().handle( new ActionEvent() );
+        Controller.self.getComboBoxPattern().getSelectionModel().select("Adapter");
     }
+
+    @Test
+    public void testController2(){
+
+        Controller.self.getComboBoxPattern().getSelectionModel().select("Adapter");
+        Controller.self.getGenerateCode().getOnAction().handle( new ActionEvent() );
+        String expected = this.readFromFile("src/sample/input/00.txt").trim();
+        String actual = Controller.self.getTextFromTextArea();
+        Assertions.assertEquals(expected, actual);
+
+    }
+
 }

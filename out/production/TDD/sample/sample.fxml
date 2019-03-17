@@ -8,11 +8,11 @@
 
 <AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="200.0" minWidth="-Infinity" prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/10.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="sample.Controller">
    <children>
-      <Button fx:id="generateCode" layoutX="178.0" layoutY="23.0" mnemonicParsing="false" prefHeight="25.0" prefWidth="74.0" text="Generate" />
-      <ComboBox fx:id="comboBoxPattern" layoutX="20.0" layoutY="23.0" prefWidth="150.0" promptText="Pattern" AnchorPane.leftAnchor="20.0" />
+      <Button fx:id="generateCode" layoutX="178.0" layoutY="23.0" mnemonicParsing="false" onAction="#generateButtonAction" prefHeight="25.0" prefWidth="74.0" text="Generate" AnchorPane.leftAnchor="178.0" AnchorPane.topAnchor="23.0" />
+      <ComboBox fx:id="comboBoxPattern" layoutX="20.0" layoutY="23.0" prefWidth="150.0" promptText="Pattern" AnchorPane.leftAnchor="20.0" AnchorPane.topAnchor="23.0" />
       <ScrollPane layoutY="62.0" prefHeight="338.0" prefWidth="580.0" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="10.0" AnchorPane.rightAnchor="10.0" AnchorPane.topAnchor="62.0">
          <content>
-            <TextArea fx:id="codeViewer" editable="false" prefHeight="640.0" prefWidth="1355.0" wrapText="true" />
+            <TextArea fx:id="codeViewer" editable="false" prefHeight="640.0" prefWidth="1343.0" wrapText="true" />
          </content>
       </ScrollPane>
    </children>
