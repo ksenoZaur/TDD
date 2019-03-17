@@ -72,7 +72,7 @@ public class Test {
 
     }
 
-    public void testMethodGenerate() throws Exception{
+    public String testMethodGenerate() throws Exception{
 
         Generator object = new Generator();
 
@@ -86,11 +86,17 @@ public class Test {
             throw new Exception("Ошибка!");
         }
 
+        return code;
+
     }
 
-    public void testControllerFieldSelf(){
+    public void testControllerFieldSelf() throws Exception{
 
-        Controller.self.setText("code");
+        String code = this.testMethodGenerate();
+
+        Controller.self.setText( code );
+
+        String result = Controller.self.getTextFromTextArea();
 
     }
 
