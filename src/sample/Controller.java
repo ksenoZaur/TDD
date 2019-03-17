@@ -9,7 +9,11 @@ public class Controller {
 
     public ComboBox comboBoxPattern;
 
+    public static Controller self;
+
     public Controller(){
+
+        self = this;
 
         Test test = new Test();
 
