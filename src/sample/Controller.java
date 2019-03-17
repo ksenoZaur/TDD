@@ -13,6 +13,7 @@ public class Controller {
 
         Test test = new Test();
         test.testMethodgetPatterns2();
+        test.testMethodGetLang2();
 
     }
 

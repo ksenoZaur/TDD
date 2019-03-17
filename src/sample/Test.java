@@ -36,4 +36,13 @@ public class Test {
 
     }
 
+    public void testMethodGetLang2(){
+
+        Generator object = new Generator();
+
+        Map<Integer, String> languages = object.getLanguages();
+
+        languages.get(0).equals("Java");
+    }
+
 }
