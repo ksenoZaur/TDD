@@ -4,12 +4,14 @@ import javafx.collections.FXCollections;
 import javafx.collections.ObservableList;
 import javafx.fxml.FXML;
 import javafx.scene.control.ComboBox;
+import javafx.scene.control.TextArea;
 
 public class Controller {
 
     public ComboBox comboBoxPattern;
 
     public static Controller self;
+    public TextArea codeViewer;
 
     public Controller(){
 

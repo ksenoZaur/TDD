@@ -90,7 +90,7 @@ public class Test {
 
     public void testControllerFieldSelf(){
 
-        Controller.self;
+        Controller.self.setText("code");
 
     }
 
