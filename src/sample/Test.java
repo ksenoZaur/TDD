@@ -1,8 +1,28 @@
 package sample;
 
+import java.io.FileInputStream;
+import java.io.IOException;
+import java.nio.charset.StandardCharsets;
+import java.nio.file.Files;
+import java.nio.file.Paths;
 import java.util.Map;
 
 public class Test {
+
+    private String readFromFile( String path ){
+        String text = null;
+
+        try {
+            text = new String(Files.readAllBytes(Paths.get(path)), StandardCharsets.UTF_8);
+            text = text.replaceAll("\\n", "");
+            text = text.replaceAll("\\r", "");
+            text = text.replaceAll("\\t", "");
+        } catch (IOException e) {
+            e.printStackTrace();
+        }
+
+        return text;
+    }
 
     public void testCreateObject(){
 
@@ -51,13 +71,19 @@ public class Test {
         }
     }
 
-    public void testMethodGenerate() {
+    public void testMethodGenerate() throws Exception{
 
         Generator object = new Generator();
 
         object.generate(0, 0);
 
         String code = object.generate(0,0);
+
+        String expected = this.readFromFile("src/sample/input/00.txt").trim();
+
+        if( !code.equals( expected ) ){
+            throw new Exception("Ошибка!");
+        }
 
     }
 

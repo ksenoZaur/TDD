@@ -17,6 +17,7 @@ public class Controller {
 
             test.testMethodgetPatterns2();
             test.testMethodGetLang2();
+            test.testMethodGenerate();
 
         } catch ( Exception ex ){
 
