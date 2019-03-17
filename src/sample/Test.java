@@ -28,4 +28,12 @@ public class Test {
 
     }
 
+    public void testMethodGetLang(){
+
+        Generator object = new Generator();
+
+        Map<Integer, String> languages = object.getLanguages();
+
+    }
+
 }
