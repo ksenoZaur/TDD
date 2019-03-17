@@ -18,13 +18,16 @@ public class Test {
 
     }
 
-    public void testMethodgetPatterns2(){
+    public void testMethodgetPatterns2() throws Exception{
 
         Generator object = new Generator();
 
         Map<Integer, String> patterns = object.getPatterns();
 
-        patterns.get(0).equals("Adapter");
+        if( !patterns.get(0).equals("Adapter") ){
+
+            throw new Exception("Ошибка!");
+        }
 
     }
 
@@ -36,13 +39,16 @@ public class Test {
 
     }
 
-    public void testMethodGetLang2(){
+    public void testMethodGetLang2() throws Exception{
 
         Generator object = new Generator();
 
         Map<Integer, String> languages = object.getLanguages();
 
-        languages.get(0).equals("Java");
+        if( !languages.get(0).equals("Java") ){
+
+            throw new Exception("Ошибка!");
+        }
     }
 
 }

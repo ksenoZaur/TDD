@@ -12,8 +12,17 @@ public class Controller {
     public Controller(){
 
         Test test = new Test();
-        test.testMethodgetPatterns2();
-        test.testMethodGetLang2();
+
+        try {
+
+            test.testMethodgetPatterns2();
+            test.testMethodGetLang2();
+
+        } catch ( Exception ex ){
+
+            ex.printStackTrace();
+
+        }
 
     }
 
