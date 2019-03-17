@@ -9,6 +9,6 @@ public class Generator {
     }
 
     public Map<Integer, String> getLanguages() {
-        return null;
+        return  Map.of(0, "Java");
     }
 }
