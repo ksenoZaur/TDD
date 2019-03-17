@@ -98,7 +98,7 @@ public class Test {
 
         String result = Controller.self.getTextFromTextArea();
 
-        if( result == null ){
+        if( !result.equals( code ) ){
             throw new Exception("Ошибка!");
         }
 
