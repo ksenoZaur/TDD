@@ -1,5 +1,7 @@
 package sample;
 
+import javafx.event.ActionEvent;
+
 import java.io.FileInputStream;
 import java.io.IOException;
 import java.nio.charset.StandardCharsets;
@@ -104,4 +106,7 @@ public class Test {
 
     }
 
+    public void testController(){
+        Controller.self.getGenerateCode().getOnAction().handle( new ActionEvent() );
+    }
 }

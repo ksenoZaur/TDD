@@ -1,12 +1,11 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="cdb932d9-7e58-4d94-93a9-e7b232ef17da" name="Default" comment="Тестируем работу методов setText, getTextFromTextArea часть 2">
+    <list default="true" id="cdb932d9-7e58-4d94-93a9-e7b232ef17da" name="Default" comment="Добавляем функционал в методы setText, getTextFromTextArea">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/TDD/sample/Controller.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/TDD/sample/Controller.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/TDD/sample/sample.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/TDD/sample/sample.fxml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/sample/Controller.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/sample/Controller.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/sample/Generator.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/sample/Generator.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/sample/Test.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/sample/Test.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/sample/sample.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/src/sample/sample.fxml" afterDir="false" />
     </list>
     <ignored path="JavaFxApplication.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -78,11 +77,14 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/sample/Controller.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="149">
-              <caret line="31" column="43" selection-start-line="31" selection-start-column="43" selection-end-line="31" selection-end-column="43" />
+            <state relative-caret-position="100">
+              <caret line="39" column="34" selection-start-line="39" selection-start-column="34" selection-end-line="39" selection-end-column="34" />
               <folding>
                 <element signature="imports" expanded="true" />
+                <element signature="method#Controller#0;class#Controller#0" />
                 <element signature="method#setText#0;class#Controller#0" />
+                <element signature="e#1259#1260#0" expanded="true" />
+                <element signature="e#1294#1295#0" expanded="true" />
               </folding>
             </state>
           </provider>
@@ -91,8 +93,8 @@
       <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/sample/Test.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="145">
-              <caret line="84" selection-start-line="84" selection-end-line="84" />
+            <state relative-caret-position="135">
+              <caret line="112" lean-forward="true" selection-start-line="112" selection-end-line="112" />
               <folding>
                 <element signature="imports" expanded="true" />
                 <element signature="method#testCreateObject#0;class#Test#0" />
@@ -100,7 +102,10 @@
                 <element signature="method#testMethodgetPatterns2#0;class#Test#0" />
                 <element signature="method#testMethodGetLang#0;class#Test#0" />
                 <element signature="method#testMethodGetLang2#0;class#Test#0" />
+                <element signature="method#testMethodGenerate#0;class#Test#0" />
                 <element signature="method#testControllerFieldSelf#0;class#Test#0" />
+                <element signature="e#2341#2342#0" expanded="true" />
+                <element signature="e#2372#2373#0" expanded="true" />
               </folding>
             </state>
           </provider>
@@ -110,8 +115,8 @@
         <entry file="file://$PROJECT_DIR$/src/sample/sample.fxml">
           <provider editor-type-id="JavaFX-Scene-Builder" />
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="238">
-              <caret line="14" column="104" selection-start-line="14" selection-start-column="104" selection-end-line="14" selection-end-column="104" />
+            <state relative-caret-position="170">
+              <caret line="10" column="29" selection-start-line="10" selection-start-column="29" selection-end-line="10" selection-end-column="29" />
             </state>
           </provider>
         </entry>
@@ -155,9 +160,9 @@
       <list>
         <option value="$PROJECT_DIR$/src/sample/Main.java" />
         <option value="$PROJECT_DIR$/src/sample/sample.fxml" />
-        <option value="$PROJECT_DIR$/src/sample/Controller.java" />
-        <option value="$PROJECT_DIR$/src/sample/Test.java" />
         <option value="$PROJECT_DIR$/src/sample/Generator.java" />
+        <option value="$PROJECT_DIR$/src/sample/Test.java" />
+        <option value="$PROJECT_DIR$/src/sample/Controller.java" />
       </list>
     </option>
   </component>
@@ -213,7 +218,7 @@
     <property name="OverrideImplement.combined" value="false" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
-    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1552831494178" />
+    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1552836114690" />
     <property name="dynamic.classpath" value="false" />
     <property name="last_opened_file_path" value="C:/SceneBuilder/SceneBuilder.exe" />
     <property name="recentsLimit" value="5" />
@@ -321,7 +326,7 @@
       <workItem from="1552201932946" duration="8151000" />
       <workItem from="1552576157422" duration="38000" />
       <workItem from="1552807862765" duration="1706000" />
-      <workItem from="1552828662811" duration="2792000" />
+      <workItem from="1552828662811" duration="5057000" />
     </task>
     <task id="LOCAL-00001" summary="Созданы классы Test и генератор">
       <created>1552809188480</created>
@@ -505,17 +510,24 @@
       <option name="project" value="LOCAL" />
       <updated>1552830558899</updated>
     </task>
-    <option name="localTasksCounter" value="27" />
+    <task id="LOCAL-00027" summary="Добавляем функционал в методы setText, getTextFromTextArea">
+      <created>1552831522741</created>
+      <option name="number" value="00027" />
+      <option name="presentableId" value="LOCAL-00027" />
+      <option name="project" value="LOCAL" />
+      <updated>1552831522741</updated>
+    </task>
+    <option name="localTasksCounter" value="28" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="22849000" />
+    <option name="totallyTimeSpent" value="25114000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1382" height="744" extended-state="6" />
     <editor active="true" />
     <layout>
-      <window_info content_ui="combo" id="Project" order="0" sideWeight="0.6703755" weight="0.2655068" />
+      <window_info content_ui="combo" id="Project" order="0" sideWeight="0.6703755" visible="true" weight="0.2655068" />
       <window_info id="Structure" order="1" weight="0.25" />
       <window_info id="Favorites" order="2" />
       <window_info id="Designer" order="3" />
@@ -524,8 +536,8 @@
       <window_info id="UI Designer" order="6" />
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Find" order="1" />
-      <window_info anchor="bottom" id="Run" order="2" weight="0.29623568" />
-      <window_info active="true" anchor="bottom" id="Debug" order="3" visible="true" weight="0.41080198" />
+      <window_info active="true" anchor="bottom" id="Run" order="2" visible="true" weight="0.4893617" />
+      <window_info anchor="bottom" id="Debug" order="3" weight="0.41080198" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
       <window_info anchor="bottom" id="TODO" order="6" />
@@ -595,7 +607,6 @@
   <component name="VcsManagerConfiguration">
     <option name="OFFER_MOVE_TO_ANOTHER_CHANGELIST_ON_PARTIAL_COMMIT" value="true" />
     <option name="INCLUDE_TEXT_INTO_SHELF" value="false" />
-    <MESSAGE value="Первый тест - создание обьекта Generator" />
     <MESSAGE value="Создали класс Generator" />
     <MESSAGE value="Тест на вызов метода getPatterns()" />
     <MESSAGE value="Создан метод getPatterns()" />
@@ -620,14 +631,15 @@
     <MESSAGE value="Добавлен метод getTextFromTextArea" />
     <MESSAGE value="Тестируем работу методов setText, getTextFromTextArea" />
     <MESSAGE value="Тестируем работу методов setText, getTextFromTextArea часть 2" />
-    <option name="LAST_COMMIT_MESSAGE" value="Тестируем работу методов setText, getTextFromTextArea часть 2" />
+    <MESSAGE value="Добавляем функционал в методы setText, getTextFromTextArea" />
+    <option name="LAST_COMMIT_MESSAGE" value="Добавляем функционал в методы setText, getTextFromTextArea" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
       <breakpoints>
         <line-breakpoint enabled="true" type="java-line">
           <url>file://$PROJECT_DIR$/src/sample/Test.java</url>
-          <line>82</line>
+          <line>84</line>
           <properties />
           <option name="timeStamp" value="1" />
         </line-breakpoint>
@@ -649,17 +661,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/sample/Controller.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="149">
-          <caret line="31" column="43" selection-start-line="31" selection-start-column="43" selection-end-line="31" selection-end-column="43" />
-          <folding>
-            <element signature="imports" expanded="true" />
-            <element signature="method#setText#0;class#Controller#0" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/sample/Generator.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="115">
@@ -673,15 +674,29 @@
     <entry file="file://$PROJECT_DIR$/src/sample/sample.fxml">
       <provider editor-type-id="JavaFX-Scene-Builder" />
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="238">
-          <caret line="14" column="104" selection-start-line="14" selection-start-column="104" selection-end-line="14" selection-end-column="104" />
+        <state relative-caret-position="170">
+          <caret line="10" column="29" selection-start-line="10" selection-start-column="29" selection-end-line="10" selection-end-column="29" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/sample/Controller.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="100">
+          <caret line="39" column="34" selection-start-line="39" selection-start-column="34" selection-end-line="39" selection-end-column="34" />
+          <folding>
+            <element signature="imports" expanded="true" />
+            <element signature="method#Controller#0;class#Controller#0" />
+            <element signature="method#setText#0;class#Controller#0" />
+            <element signature="e#1259#1260#0" expanded="true" />
+            <element signature="e#1294#1295#0" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/sample/Test.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="145">
-          <caret line="84" selection-start-line="84" selection-end-line="84" />
+        <state relative-caret-position="135">
+          <caret line="112" lean-forward="true" selection-start-line="112" selection-end-line="112" />
           <folding>
             <element signature="imports" expanded="true" />
             <element signature="method#testCreateObject#0;class#Test#0" />
@@ -689,7 +704,10 @@
             <element signature="method#testMethodgetPatterns2#0;class#Test#0" />
             <element signature="method#testMethodGetLang#0;class#Test#0" />
             <element signature="method#testMethodGetLang2#0;class#Test#0" />
+            <element signature="method#testMethodGenerate#0;class#Test#0" />
             <element signature="method#testControllerFieldSelf#0;class#Test#0" />
+            <element signature="e#2341#2342#0" expanded="true" />
+            <element signature="e#2372#2373#0" expanded="true" />
           </folding>
         </state>
       </provider>
