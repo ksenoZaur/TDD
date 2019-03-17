@@ -15,8 +15,9 @@ public class Generator {
         return  Map.of(0, "Java");
     }
 
-    public void generate(int pattern, int language) {
+    public String generate(int pattern, int language) {
         //TODO Генерировать код
+        return "";
     }
 
 }
