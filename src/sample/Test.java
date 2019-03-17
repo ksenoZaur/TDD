@@ -69,6 +69,7 @@ public class Test {
 
             throw new Exception("Ошибка!");
         }
+
     }
 
     public void testMethodGenerate() throws Exception{
@@ -84,6 +85,12 @@ public class Test {
         if( !code.equals( expected ) ){
             throw new Exception("Ошибка!");
         }
+
+    }
+
+    public void testControllerFieldSelf(){
+
+        Controller.self;
 
     }
 
