@@ -57,6 +57,8 @@ public class Test {
 
         object.generate(0, 0);
 
+        String code = object.generate(0,0);
+
     }
 
 }

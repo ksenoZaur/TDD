@@ -1,9 +1,10 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="cdb932d9-7e58-4d94-93a9-e7b232ef17da" name="Default" comment="Тест метода generate()">
+    <list default="true" id="cdb932d9-7e58-4d94-93a9-e7b232ef17da" name="Default" comment="Добавлен метод generate(int, int) + TODO">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/sample/Generator.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/sample/Generator.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/sample/Test.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/sample/Test.java" afterDir="false" />
     </list>
     <ignored path="JavaFxApplication.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -75,8 +76,8 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/sample/Controller.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="612">
-              <caret line="36" lean-forward="true" selection-start-line="36" selection-end-line="36" />
+            <state relative-caret-position="357">
+              <caret line="30" column="33" selection-start-line="30" selection-start-column="33" selection-end-line="30" selection-end-column="33" />
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
@@ -84,11 +85,11 @@
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="false">
+      <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/sample/Test.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="340">
-              <caret line="57" column="20" lean-forward="true" selection-start-line="57" selection-start-column="20" selection-end-line="57" selection-end-column="21" />
+            <state relative-caret-position="313">
+              <caret line="59" column="41" selection-start-line="59" selection-start-column="41" selection-end-line="59" selection-end-column="41" />
               <folding>
                 <element signature="method#testCreateObject#0;class#Test#0" />
                 <element signature="method#testMethodgetPatterns#0;class#Test#0" />
@@ -100,17 +101,13 @@
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="true">
+      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/sample/Generator.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="238">
-              <caret line="14" column="41" lean-forward="true" selection-start-line="14" selection-start-column="41" selection-end-line="14" selection-end-column="41" />
+            <state relative-caret-position="340">
+              <caret line="20" selection-start-line="20" selection-end-line="20" />
               <folding>
                 <element signature="imports" expanded="true" />
-                <element signature="e#137#138#0" expanded="true" />
-                <element signature="e#181#182#0" expanded="true" />
-                <element signature="e#231#232#0" expanded="true" />
-                <element signature="e#258#259#0" expanded="true" />
               </folding>
             </state>
           </provider>
@@ -153,9 +150,9 @@
       <list>
         <option value="$PROJECT_DIR$/src/sample/Main.java" />
         <option value="$PROJECT_DIR$/src/sample/sample.fxml" />
+        <option value="$PROJECT_DIR$/src/sample/Generator.java" />
         <option value="$PROJECT_DIR$/src/sample/Controller.java" />
         <option value="$PROJECT_DIR$/src/sample/Test.java" />
-        <option value="$PROJECT_DIR$/src/sample/Generator.java" />
       </list>
     </option>
   </component>
@@ -418,11 +415,18 @@
       <option name="project" value="LOCAL" />
       <updated>1552816282202</updated>
     </task>
-    <option name="localTasksCounter" value="15" />
+    <task id="LOCAL-00015" summary="Добавлен метод generate(int, int) + TODO">
+      <created>1552816512270</created>
+      <option name="number" value="00015" />
+      <option name="presentableId" value="LOCAL-00015" />
+      <option name="project" value="LOCAL" />
+      <updated>1552816512270</updated>
+    </task>
+    <option name="localTasksCounter" value="16" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="15427000" />
+    <option name="totallyTimeSpent" value="16291000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1382" height="744" extended-state="6" />
@@ -485,7 +489,8 @@
     <MESSAGE value="Дополнен метод getLanguages()" />
     <MESSAGE value="Тесты теперь более корректны" />
     <MESSAGE value="Тест метода generate()" />
-    <option name="LAST_COMMIT_MESSAGE" value="Тест метода generate()" />
+    <MESSAGE value="Добавлен метод generate(int, int) + TODO" />
+    <option name="LAST_COMMIT_MESSAGE" value="Добавлен метод generate(int, int) + TODO" />
   </component>
   <component name="antWorkspaceConfiguration">
     <option name="IS_AUTOSCROLL_TO_SOURCE" value="false" />
@@ -510,10 +515,20 @@
       </provider>
       <provider editor-type-id="JavaFX-Scene-Builder" />
     </entry>
+    <entry file="file://$PROJECT_DIR$/src/sample/Generator.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="340">
+          <caret line="20" selection-start-line="20" selection-end-line="20" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/src/sample/Controller.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="612">
-          <caret line="36" lean-forward="true" selection-start-line="36" selection-end-line="36" />
+        <state relative-caret-position="357">
+          <caret line="30" column="33" selection-start-line="30" selection-start-column="33" selection-end-line="30" selection-end-column="33" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
@@ -522,28 +537,14 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/sample/Test.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="340">
-          <caret line="57" column="20" lean-forward="true" selection-start-line="57" selection-start-column="20" selection-end-line="57" selection-end-column="21" />
+        <state relative-caret-position="313">
+          <caret line="59" column="41" selection-start-line="59" selection-start-column="41" selection-end-line="59" selection-end-column="41" />
           <folding>
             <element signature="method#testCreateObject#0;class#Test#0" />
             <element signature="method#testMethodgetPatterns#0;class#Test#0" />
             <element signature="method#testMethodgetPatterns2#0;class#Test#0" />
             <element signature="method#testMethodGetLang#0;class#Test#0" />
             <element signature="method#testMethodGetLang#1;class#Test#0" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/sample/Generator.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="238">
-          <caret line="14" column="41" lean-forward="true" selection-start-line="14" selection-start-column="41" selection-end-line="14" selection-end-column="41" />
-          <folding>
-            <element signature="imports" expanded="true" />
-            <element signature="e#137#138#0" expanded="true" />
-            <element signature="e#181#182#0" expanded="true" />
-            <element signature="e#231#232#0" expanded="true" />
-            <element signature="e#258#259#0" expanded="true" />
           </folding>
         </state>
       </provider>
