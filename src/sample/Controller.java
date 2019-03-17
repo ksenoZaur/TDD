@@ -43,4 +43,8 @@ public class Controller {
     public void setText(String code) {
 
     }
+
+    public String getTextFromTextArea() {
+        return null;
+    }
 }
