@@ -17,6 +17,11 @@ public class Controller {
 
         self = this;
 
+    }
+
+    @FXML
+    public void initialize() {
+
         Test test = new Test();
 
         try {
@@ -24,6 +29,7 @@ public class Controller {
             test.testMethodgetPatterns2();
             test.testMethodGetLang2();
             test.testMethodGenerate();
+            test.testControllerFieldSelf();
 
         } catch ( Exception ex ){
 
@@ -31,10 +37,6 @@ public class Controller {
 
         }
 
-    }
-
-    @FXML
-    public void initialize() {
         ObservableList<String> langs = FXCollections.observableArrayList("Адаптер",
                 "Декоратор", "Заместитель");
         comboBoxPattern.setItems(langs);
@@ -42,11 +44,11 @@ public class Controller {
 
     public void setText(String code) {
 
-
+        this.codeViewer.setText( code );
 
     }
 
     public String getTextFromTextArea() {
-        return null;
+        return this.codeViewer.getText();
     }
 }

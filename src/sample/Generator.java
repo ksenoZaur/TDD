@@ -17,7 +17,7 @@ public class Generator {
 
     public String generate(int pattern, int language) {
         //TODO Генерировать код для других паттернов и языков
-        return "\uFEFFpublic interface Class1{public Object method1();}public class Class2{public Object method1(){return new Object();}}public class Class3 implements Class1{private Class2 object1 = new Class2();@Overridepublic Object method1() {return object1.method1();}}public class Main{public static void main (String [] args){Class1 object1 = new Class3();Object object2 = object1.method1();}}";
+        return "\uFEFF// Файл Chief.javapublic interface Chief {public Object makeBreakfast();public Object makeDinner();public Object makeSupper();}// Файл Plumber.javapublic class Plumber {public Object getPipe(){return new Object();}public Object getKey(){return new Object();}public Object getScrewDriver(){return new Object();}}// Файл ChiefAdapter.javapublic class ChiefAdapter implements Chief{private Plumber plumber = new Plumber();@Overridepublic Object makeBreakfast() {return plumber.getKey();}@Overridepublic Object makeDinner() {return plumber.getScrewDriver();}@Overridepublic Object makeSupper() {return plumber.getPipe();}}// Файл Client.javapublic class Client {public static void main (String [] args){Chief chief = new ChiefAdapter();Object key = chief.makeDinner();}}";
     }
 
 }

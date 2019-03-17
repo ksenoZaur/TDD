@@ -12,7 +12,7 @@
       <ComboBox fx:id="comboBoxPattern" layoutX="20.0" layoutY="23.0" prefWidth="150.0" promptText="Pattern" AnchorPane.leftAnchor="20.0" />
       <ScrollPane layoutY="62.0" prefHeight="338.0" prefWidth="580.0" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="10.0" AnchorPane.rightAnchor="10.0" AnchorPane.topAnchor="62.0">
          <content>
-            <TextArea editable="false" prefHeight="640.0" prefWidth="1355.0" wrapText="true" />
+            <TextArea editable="false" prefHeight="640.0" prefWidth="1355.0" wrapText="true"  fx:id="codeViewer"/>
          </content>
       </ScrollPane>
    </children>
