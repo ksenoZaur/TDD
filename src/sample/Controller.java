@@ -11,6 +11,9 @@ public class Controller {
 
     public Controller(){
 
+        Test test = new Test();
+        test.testMethodgetPatterns2();
+
     }
 
     @FXML
