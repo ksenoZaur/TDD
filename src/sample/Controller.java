@@ -40,4 +40,7 @@ public class Controller {
         comboBoxPattern.setItems(langs);
     }
 
+    public void setText(String code) {
+
+    }
 }
