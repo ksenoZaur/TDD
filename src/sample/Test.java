@@ -98,6 +98,10 @@ public class Test {
 
         String result = Controller.self.getTextFromTextArea();
 
+        if( result == null ){
+            throw new Exception("Ошибка!");
+        }
+
     }
 
 }
