@@ -59,6 +59,10 @@ public class Controller {
 
     public void generateButtonAction(ActionEvent actionEvent) {
         //TODO Добавить функционал в метод
+
+        String code = this.generator.generate(0,0);
+        this.setText( code );
+
     }
 
     public ComboBox getComboBoxPattern() {

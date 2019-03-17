@@ -8,6 +8,8 @@ import java.nio.charset.StandardCharsets;
 import java.nio.file.Files;
 import java.nio.file.Paths;
 import java.util.Map;
+
+import javafx.stage.Stage;
 import org.junit.jupiter.api.Assertions;
 import org.junit.jupiter.api.Test;
 
@@ -127,6 +129,19 @@ class TestGeneratorAndController {
 
     @Test
     public void testController2(){
+
+        new Thread(new Runnable() {
+            @Override
+            public void run() {
+                Main.main(null);
+            }
+        }).start();
+
+        try {
+            Thread.sleep(1000);
+        } catch (InterruptedException e) {
+            e.printStackTrace();
+        }
 
         Controller.self.getComboBoxPattern().getSelectionModel().select("Adapter");
         Controller.self.getGenerateCode().getOnAction().handle( new ActionEvent() );
