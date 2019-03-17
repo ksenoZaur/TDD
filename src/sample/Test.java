@@ -18,4 +18,14 @@ public class Test {
 
     }
 
+    public void testMethodgetPatterns2(){
+
+        Generator object = new Generator();
+
+        Map<Integer, String> patterns = object.getPatterns();
+
+        patterns.get(0).equals("Adapter");
+
+    }
+
 }
