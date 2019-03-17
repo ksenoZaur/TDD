@@ -1,5 +1,7 @@
 package sample;
 
+import java.util.Map;
+
 public class Test {
 
     public void testCreateObject(){
@@ -8,5 +10,12 @@ public class Test {
 
     }
 
+    public void testMethodgetPatterns(){
+
+        Generator object = new Generator();
+
+        Map<Integer, String> patterns = object.getPatterns();
+
+    }
 
 }
