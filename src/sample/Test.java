@@ -51,4 +51,12 @@ public class Test {
         }
     }
 
+    public void testMethodGenerate() {
+
+        Generator object = new Generator();
+
+        object.generate(0, 0);
+
+    }
+
 }
