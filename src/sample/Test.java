@@ -186,6 +186,12 @@ class TestGeneratorAndController {
         actual = Controller.self.getTextFromTextArea();
         Assertions.assertEquals(expected, actual);
 
+        Controller.self.getComboBoxLanguages().getSelectionModel().select("JavaScript");
+        Controller.self.getGenerateCode().getOnAction().handle( new ActionEvent() );
+        expected = this.readFromFile("src/sample/input/02.txt").trim();
+        actual = Controller.self.getTextFromTextArea();
+        Assertions.assertEquals(expected, actual);
+
     }
 
 
