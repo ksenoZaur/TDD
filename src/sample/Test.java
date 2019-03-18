@@ -57,6 +57,7 @@ class TestGeneratorAndController {
         ArrayList<String> patterns = object.getPatterns();
 
         Assertions.assertEquals("Adapter", patterns.get(0));
+        Assertions.assertEquals("Proxy", patterns.get(1));
 
     }
 
@@ -174,6 +175,7 @@ class TestGeneratorAndController {
         }
 
         Controller.self.getComboBoxPattern().getSelectionModel().select("Adapter");
+
         Controller.self.getComboBoxLanguages().getSelectionModel().select("Java");
         Controller.self.getGenerateCode().getOnAction().handle( new ActionEvent() );
         String expected = this.readFromFile("src/sample/input/00.txt").trim();
@@ -193,7 +195,5 @@ class TestGeneratorAndController {
         Assertions.assertEquals(expected, actual);
 
     }
-
-
 
 }

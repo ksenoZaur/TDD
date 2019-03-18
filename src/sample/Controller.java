@@ -60,12 +60,13 @@ public class Controller {
 
     public void setText(String code) {
 
+        this.codeViewer.setText("");
+
         this.stockText = code;
         code = code.replaceAll(";", "; \n ");
         code = code.replaceAll("\\{", " { \n ");
-        code = code.replaceAll("\\}", " } \n\n ");
+        code = code.replaceAll("\\}", " } ");
 
-//        this.codeViewer.setText( code );
         String[] words = code.split(" ");
         int depth = 0;
 
@@ -78,6 +79,12 @@ public class Controller {
 
             if( word.equals("}")){
                 depth--;
+            }
+
+            if( prev.equals("}") && !word.equals(";") ){
+
+                this.codeViewer.appendText("\n");
+
             }
 
             String str2 = new String(new char[depth]).replace("\0", "     ");
