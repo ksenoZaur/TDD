@@ -78,6 +78,7 @@ class TestGeneratorAndController {
 
         Assertions.assertEquals("Java", languages.get(0));
         Assertions.assertEquals("C#", languages.get(1));
+        Assertions.assertEquals("JavaScript", languages.get(2));
     }
 
     @Test

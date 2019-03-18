@@ -61,18 +61,39 @@ public class Controller {
     public void setText(String code) {
 
         this.stockText = code;
-        code = code.replaceAll(";", ";\n");
-        code = code.replaceAll("\\{", "\n { \n");
-        code = code.replaceAll("\\}", " } \n\n");
+        code = code.replaceAll(";", "; \n ");
+        code = code.replaceAll("\\{", " { \n ");
+        code = code.replaceAll("\\}", " } \n\n ");
 
-        this.codeViewer.setText( code );
-//        String[] words = code.split(" ");
-//
-//        for( String word: words ){
-//
-//            this.codeViewer.appendText(word);
-//
-//        }
+//        this.codeViewer.setText( code );
+        String[] words = code.split(" ");
+        int depth = 0;
+
+        String prev = "";
+        for( String word: words ){
+
+            if( word.equals("") ){
+                continue;
+            }
+
+            if( word.equals("}")){
+                depth--;
+            }
+
+            String str2 = new String(new char[depth]).replace("\0", "     ");
+
+            if( prev.equals("\n")){
+                this.codeViewer.appendText(str2);
+            }
+
+            this.codeViewer.appendText(" " + word);
+
+            if(word.equals("{")){
+                depth++;
+            }
+
+            prev = word;
+        }
 
     }
 
@@ -85,7 +106,7 @@ public class Controller {
     }
 
     public void generateButtonAction(ActionEvent actionEvent) {
-        //TODO Р”РѕР±Р°РІРёС‚СЊ С„СѓРЅРєС†РёРѕРЅР°Р» РІ РјРµС‚РѕРґ
+        //TODO Добавить вывод в зависимости от выбранного паттерна
 
         String code = this.generator.generate(0,this.comboBoxLanguages.getSelectionModel().getSelectedIndex());
         this.setText( code );
