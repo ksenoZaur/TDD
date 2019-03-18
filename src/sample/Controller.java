@@ -106,7 +106,7 @@ public class Controller {
     }
 
     public void generateButtonAction(ActionEvent actionEvent) {
-        //TODO Добавить вывод в зависимости от выбранного паттерна
+        //TODO пїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅ пїЅ пїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅ пїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅ пїЅпїЅпїЅпїЅпїЅпїЅпїЅпїЅ
 
         String code = this.generator.generate(0,this.comboBoxLanguages.getSelectionModel().getSelectedIndex());
         this.setText( code );
