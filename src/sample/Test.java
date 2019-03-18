@@ -101,6 +101,11 @@ class TestGeneratorAndController {
         expected = this.readFromFile("src/sample/input/01.txt").trim();
         Assertions.assertEquals(expected, code);
 
+        // JavaScript
+
+        code = object.generate(0,2);
+        expected = this.readFromFile("src/sample/input/02.txt").trim();
+        Assertions.assertEquals(expected, code);
 
     }
 
