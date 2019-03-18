@@ -1,11 +1,11 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="cdb932d9-7e58-4d94-93a9-e7b232ef17da" name="Default" comment="Тестируем генерацию кода по нажатию кнопки">
+    <list default="true" id="cdb932d9-7e58-4d94-93a9-e7b232ef17da" name="Default" comment="Тест генерации кода улучшен. Код в изменении не нуждается">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/TDD/sample/Main.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/TDD/sample/Main.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/TDD/sample/Controller.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/TDD/sample/Controller.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/sample/Controller.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/sample/Controller.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/sample/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/sample/Main.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/sample/Generator.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/sample/Generator.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/sample/Test.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/sample/Test.java" afterDir="false" />
     </list>
     <ignored path="JavaFxApplication.iws" />
@@ -76,42 +76,47 @@
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="false">
+      <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/sample/Controller.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="554">
-              <caret line="59" column="62" selection-start-line="59" selection-start-column="62" selection-end-line="59" selection-end-column="62" />
+            <state relative-caret-position="201">
+              <caret line="45" column="37" selection-start-line="45" selection-start-column="37" selection-end-line="45" selection-end-column="37" />
               <folding>
                 <element signature="imports" expanded="true" />
                 <element signature="method#Controller#0;class#Controller#0" />
                 <element signature="method#initialize#0;class#Controller#0" />
                 <element signature="method#setText#0;class#Controller#0" />
+                <element signature="e#1350#1351#0" expanded="true" />
+                <element signature="e#1424#1425#0" expanded="true" />
                 <element signature="method#generateButtonAction#0;class#Controller#0" />
-                <element signature="e#1531#1532#0" expanded="true" />
-                <element signature="e#1569#1570#0" expanded="true" />
+                <element signature="e#1705#1706#0" expanded="true" />
               </folding>
             </state>
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="true">
+      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/sample/Test.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="133">
-              <caret line="136" column="19" selection-start-line="136" selection-start-column="19" selection-end-line="136" selection-end-column="19" />
+            <state relative-caret-position="112">
+              <caret line="90" lean-forward="true" selection-start-line="90" selection-end-line="90" />
               <folding>
                 <element signature="imports" expanded="true" />
                 <element signature="method#readFromFile#0;class#Test#0" />
+                <element signature="e#308#552#0" />
                 <element signature="method#testCreateObject#0;class#Test#0" />
                 <element signature="method#testMethodgetPatterns#0;class#Test#0" />
                 <element signature="method#testMethodgetPatterns2#0;class#Test#0" />
                 <element signature="method#testMethodGetLang#0;class#Test#0" />
                 <element signature="method#testMethodGetLang2#0;class#Test#0" />
-                <element signature="method#testMethodGenerate#0;class#Test#0" />
-                <element signature="method#testControllerFieldSelf#0;class#Test#0" />
+                <element signature="method#testControllerFieldSelf#0;class#TestGeneratorAndController#0" />
+                <element signature="e#2315#2316#0" expanded="true" />
+                <element signature="e#2362#2363#0" expanded="true" />
                 <element signature="method#testController#0;class#Test#0" />
-                <element signature="e#2898#2899#0" expanded="true" />
-                <element signature="e#2943#2944#0" expanded="true" />
+                <element signature="method#testController#1;class#TestGeneratorAndController#0" />
+                <element signature="class#3089:3212" />
+                <element signature="e#3085#3086#0" expanded="true" />
+                <element signature="e#3132#3133#0" expanded="true" />
               </folding>
             </state>
           </provider>
@@ -130,8 +135,8 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/sample/Generator.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="85">
-              <caret line="5" column="19" selection-start-line="5" selection-start-column="19" selection-end-line="5" selection-end-column="19" />
+            <state relative-caret-position="221">
+              <caret line="19" column="706" selection-start-line="19" selection-start-column="706" selection-end-line="19" selection-end-column="706" />
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
@@ -166,12 +171,12 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/src/sample/Generator.java" />
         <option value="$PROJECT_DIR$/src/sample/sample.fxml" />
         <option value="$PROJECT_DIR$/src/sample/GeneratorTest.java" />
-        <option value="$PROJECT_DIR$/src/sample/Controller.java" />
         <option value="$PROJECT_DIR$/src/sample/Main.java" />
         <option value="$PROJECT_DIR$/src/sample/Test.java" />
+        <option value="$PROJECT_DIR$/src/sample/Generator.java" />
+        <option value="$PROJECT_DIR$/src/sample/Controller.java" />
       </list>
     </option>
   </component>
@@ -230,7 +235,7 @@
     <property name="Repository.Attach.Sources" value="false" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
-    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1552850045807" />
+    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1552885028251" />
     <property name="com.intellij.testIntegration.createTest.CreateTestDialog.defaultLibrary" value="JUnit4" />
     <property name="com.intellij.testIntegration.createTest.CreateTestDialog.defaultLibrarySuperClass.Arquillian JUnit4" value="" />
     <property name="com.intellij.testIntegration.createTest.CreateTestDialog.defaultLibrarySuperClass.JUnit4" value="" />
@@ -262,7 +267,7 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="JUnit.TestGeneratorAndController.testController2">
+  <component name="RunManager" selected="Application.Main">
     <configuration default="true" type="DartUnitRunConfigurationType" factoryName="DartUnit">
       <option name="VMOptions" />
       <option name="arguments" />
@@ -303,7 +308,7 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="TestGeneratorAndController.testController2" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+    <configuration name="TestGeneratorAndController.readFromFile" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="TDD" />
       <extension name="coverage">
         <pattern>
@@ -313,7 +318,87 @@
       </extension>
       <option name="PACKAGE_NAME" value="sample" />
       <option name="MAIN_CLASS_NAME" value="sample.TestGeneratorAndController" />
-      <option name="METHOD_NAME" value="testController2" />
+      <option name="METHOD_NAME" value="readFromFile(java.lang.String)" />
+      <option name="TEST_OBJECT" value="method" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
+      <option name="TEST_SEARCH_SCOPE">
+        <value defaultName="moduleWithDependencies" />
+      </option>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="TestGeneratorAndController.testControllerFieldSelf" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="TDD" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="sample.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="sample" />
+      <option name="MAIN_CLASS_NAME" value="sample.TestGeneratorAndController" />
+      <option name="METHOD_NAME" value="testControllerFieldSelf" />
+      <option name="TEST_OBJECT" value="method" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
+      <option name="TEST_SEARCH_SCOPE">
+        <value defaultName="moduleWithDependencies" />
+      </option>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="TestGeneratorAndController.testMethodGenerate" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="TDD" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="sample.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="sample" />
+      <option name="MAIN_CLASS_NAME" value="sample.TestGeneratorAndController" />
+      <option name="METHOD_NAME" value="testMethodGenerate" />
+      <option name="TEST_OBJECT" value="method" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
+      <option name="TEST_SEARCH_SCOPE">
+        <value defaultName="moduleWithDependencies" />
+      </option>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="TestGeneratorAndController.testMethodGetLang" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="TDD" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="sample.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="sample" />
+      <option name="MAIN_CLASS_NAME" value="sample.TestGeneratorAndController" />
+      <option name="METHOD_NAME" value="testMethodGetLang" />
+      <option name="TEST_OBJECT" value="method" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
+      <option name="TEST_SEARCH_SCOPE">
+        <value defaultName="moduleWithDependencies" />
+      </option>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="TestGeneratorAndController.testMethodGetLang2" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="TDD" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="sample.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="sample" />
+      <option name="MAIN_CLASS_NAME" value="sample.TestGeneratorAndController" />
+      <option name="METHOD_NAME" value="testMethodGetLang2" />
       <option name="TEST_OBJECT" value="method" />
       <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
       <option name="TEST_SEARCH_SCOPE">
@@ -355,7 +440,11 @@
     </configuration>
     <recent_temporary>
       <list>
-        <item itemvalue="JUnit.TestGeneratorAndController.testController2" />
+        <item itemvalue="JUnit.TestGeneratorAndController.testMethodGenerate" />
+        <item itemvalue="JUnit.TestGeneratorAndController.testControllerFieldSelf" />
+        <item itemvalue="JUnit.TestGeneratorAndController.readFromFile" />
+        <item itemvalue="JUnit.TestGeneratorAndController.testMethodGetLang" />
+        <item itemvalue="JUnit.TestGeneratorAndController.testMethodGetLang2" />
       </list>
     </recent_temporary>
   </component>
@@ -373,7 +462,7 @@
       <workItem from="1552201932946" duration="8151000" />
       <workItem from="1552576157422" duration="38000" />
       <workItem from="1552807862765" duration="1706000" />
-      <workItem from="1552828662811" duration="14862000" />
+      <workItem from="1552828662811" duration="18462000" />
     </task>
     <task id="LOCAL-00001" summary="Созданы классы Test и генератор">
       <created>1552809188480</created>
@@ -585,28 +674,50 @@
       <option name="project" value="LOCAL" />
       <updated>1552849301274</updated>
     </task>
-    <option name="localTasksCounter" value="31" />
+    <task id="LOCAL-00031" summary="Тест генерации кода улучшен. Код в изменении не нуждается">
+      <created>1552850112386</created>
+      <option name="number" value="00031" />
+      <option name="presentableId" value="LOCAL-00031" />
+      <option name="project" value="LOCAL" />
+      <updated>1552850112386</updated>
+    </task>
+    <option name="localTasksCounter" value="32" />
     <servers />
   </component>
   <component name="TestHistory">
-    <history-entry file="TestGeneratorAndController_testController2 - 2019.03.18 at 01h 51m 00s.xml">
-      <configuration name="TestGeneratorAndController.testController2" configurationId="JUnit" />
+    <history-entry file="TestGeneratorAndController_testMethodGetLang2 - 2019.03.18 at 11h 27m 46s.xml">
+      <configuration name="TestGeneratorAndController.testMethodGetLang2" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="TestGeneratorAndController_testController2 - 2019.03.18 at 02h 07m 23s.xml">
-      <configuration name="TestGeneratorAndController.testController2" configurationId="JUnit" />
+    <history-entry file="TestGeneratorAndController_testMethodGetLang - 2019.03.18 at 11h 28m 05s.xml">
+      <configuration name="TestGeneratorAndController.testMethodGetLang" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="TestGeneratorAndController_testController2 - 2019.03.18 at 02h 07m 56s.xml">
-      <configuration name="TestGeneratorAndController.testController2" configurationId="JUnit" />
+    <history-entry file="TestGeneratorAndController_testMethodGetLang - 2019.03.18 at 11h 28m 18s.xml">
+      <configuration name="TestGeneratorAndController.testMethodGetLang" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="TestGeneratorAndController_testController2 - 2019.03.18 at 02h 09m 35s.xml">
-      <configuration name="TestGeneratorAndController.testController2" configurationId="JUnit" />
+    <history-entry file="TestGeneratorAndController_testMethodGenerate - 2019.03.18 at 11h 28m 28s.xml">
+      <configuration name="TestGeneratorAndController.testMethodGenerate" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="TestGeneratorAndController_testController2 - 2019.03.18 at 02h 10m 29s.xml">
-      <configuration name="TestGeneratorAndController.testController2" configurationId="JUnit" />
+    <history-entry file="TestGeneratorAndController_testMethodGenerate - 2019.03.18 at 11h 29m 04s.xml">
+      <configuration name="TestGeneratorAndController.testMethodGenerate" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="TestGeneratorAndController_readFromFile - 2019.03.18 at 11h 29m 27s.xml">
+      <configuration name="TestGeneratorAndController.readFromFile" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="TestGeneratorAndController_testControllerFieldSelf - 2019.03.18 at 11h 30m 58s.xml">
+      <configuration name="TestGeneratorAndController.testControllerFieldSelf" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="TestGeneratorAndController_testMethodGenerate - 2019.03.18 at 11h 31m 31s.xml">
+      <configuration name="TestGeneratorAndController.testMethodGenerate" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="TestGeneratorAndController_testMethodGenerate - 2019.03.18 at 11h 31m 55s.xml">
+      <configuration name="TestGeneratorAndController.testMethodGenerate" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="TestGeneratorAndController_testMethodGenerate - 2019.03.18 at 11h 32m 02s.xml">
+      <configuration name="TestGeneratorAndController.testMethodGenerate" configurationId="JUnit" />
     </history-entry>
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="34919000" />
+    <option name="totallyTimeSpent" value="38519000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1382" height="744" extended-state="6" />
@@ -621,7 +732,7 @@
       <window_info id="UI Designer" order="6" />
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Find" order="1" />
-      <window_info active="true" anchor="bottom" id="Run" order="2" visible="true" weight="0.24549918" />
+      <window_info active="true" anchor="bottom" id="Run" order="2" visible="true" weight="0.26841244" />
       <window_info anchor="bottom" id="Debug" order="3" weight="0.30441898" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
@@ -692,7 +803,6 @@
   <component name="VcsManagerConfiguration">
     <option name="OFFER_MOVE_TO_ANOTHER_CHANGELIST_ON_PARTIAL_COMMIT" value="true" />
     <option name="INCLUDE_TEXT_INTO_SHELF" value="false" />
-    <MESSAGE value="Тестируем метод getPatterns() часть 1" />
     <MESSAGE value="Тестируем метод getPatterns() часть 1.1" />
     <MESSAGE value="Дополнен метод Generator" />
     <MESSAGE value="Тестируем вызов метода getLanguages()" />
@@ -717,28 +827,47 @@
     <MESSAGE value="Тест на наличие обработчика событий кнопки generateCode" />
     <MESSAGE value="Добавлен обработчик для кнопки generateCode" />
     <MESSAGE value="Тестируем генерацию кода по нажатию кнопки" />
-    <option name="LAST_COMMIT_MESSAGE" value="Тестируем генерацию кода по нажатию кнопки" />
+    <MESSAGE value="Тест генерации кода улучшен. Код в изменении не нуждается" />
+    <option name="LAST_COMMIT_MESSAGE" value="Тест генерации кода улучшен. Код в изменении не нуждается" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
       <breakpoints>
         <line-breakpoint enabled="true" type="java-line">
           <url>file://$PROJECT_DIR$/src/sample/Test.java</url>
-          <line>97</line>
-          <properties />
-          <option name="timeStamp" value="1" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/src/sample/Test.java</url>
-          <line>125</line>
+          <line>133</line>
           <properties />
           <option name="timeStamp" value="5" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-line">
           <url>file://$PROJECT_DIR$/src/sample/Test.java</url>
-          <line>137</line>
+          <line>79</line>
           <properties />
-          <option name="timeStamp" value="9" />
+          <option name="timeStamp" value="22" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/sample/Test.java</url>
+          <line>70</line>
+          <properties />
+          <option name="timeStamp" value="23" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/sample/Test.java</url>
+          <line>28</line>
+          <properties />
+          <option name="timeStamp" value="25" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/sample/Test.java</url>
+          <line>120</line>
+          <properties />
+          <option name="timeStamp" value="26" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/sample/Test.java</url>
+          <line>95</line>
+          <properties />
+          <option name="timeStamp" value="27" />
         </line-breakpoint>
       </breakpoints>
     </breakpoint-manager>
@@ -755,28 +884,45 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/src/sample/sample.fxml">
+      <provider editor-type-id="JavaFX-Scene-Builder" />
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="170">
+          <caret line="10" column="109" selection-start-line="10" selection-start-column="109" selection-end-line="10" selection-end-column="109" />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/src/sample/Generator.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="85">
-          <caret line="5" column="19" selection-start-line="5" selection-start-column="19" selection-end-line="5" selection-end-column="19" />
+        <state relative-caret-position="221">
+          <caret line="19" column="706" selection-start-line="19" selection-start-column="706" selection-end-line="19" selection-end-column="706" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/sample/Controller.java">
+    <entry file="file://$PROJECT_DIR$/src/sample/Test.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="554">
-          <caret line="59" column="62" selection-start-line="59" selection-start-column="62" selection-end-line="59" selection-end-column="62" />
+        <state relative-caret-position="112">
+          <caret line="90" lean-forward="true" selection-start-line="90" selection-end-line="90" />
           <folding>
             <element signature="imports" expanded="true" />
-            <element signature="method#Controller#0;class#Controller#0" />
-            <element signature="method#initialize#0;class#Controller#0" />
-            <element signature="method#setText#0;class#Controller#0" />
-            <element signature="method#generateButtonAction#0;class#Controller#0" />
-            <element signature="e#1531#1532#0" expanded="true" />
-            <element signature="e#1569#1570#0" expanded="true" />
+            <element signature="method#readFromFile#0;class#Test#0" />
+            <element signature="e#308#552#0" />
+            <element signature="method#testCreateObject#0;class#Test#0" />
+            <element signature="method#testMethodgetPatterns#0;class#Test#0" />
+            <element signature="method#testMethodgetPatterns2#0;class#Test#0" />
+            <element signature="method#testMethodGetLang#0;class#Test#0" />
+            <element signature="method#testMethodGetLang2#0;class#Test#0" />
+            <element signature="method#testControllerFieldSelf#0;class#TestGeneratorAndController#0" />
+            <element signature="e#2315#2316#0" expanded="true" />
+            <element signature="e#2362#2363#0" expanded="true" />
+            <element signature="method#testController#0;class#Test#0" />
+            <element signature="method#testController#1;class#TestGeneratorAndController#0" />
+            <element signature="class#3089:3212" />
+            <element signature="e#3085#3086#0" expanded="true" />
+            <element signature="e#3132#3133#0" expanded="true" />
           </folding>
         </state>
       </provider>
@@ -792,31 +938,19 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/sample/sample.fxml">
-      <provider editor-type-id="JavaFX-Scene-Builder" />
+    <entry file="file://$PROJECT_DIR$/src/sample/Controller.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="170">
-          <caret line="10" column="109" selection-start-line="10" selection-start-column="109" selection-end-line="10" selection-end-column="109" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/sample/Test.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="133">
-          <caret line="136" column="19" selection-start-line="136" selection-start-column="19" selection-end-line="136" selection-end-column="19" />
+        <state relative-caret-position="201">
+          <caret line="45" column="37" selection-start-line="45" selection-start-column="37" selection-end-line="45" selection-end-column="37" />
           <folding>
             <element signature="imports" expanded="true" />
-            <element signature="method#readFromFile#0;class#Test#0" />
-            <element signature="method#testCreateObject#0;class#Test#0" />
-            <element signature="method#testMethodgetPatterns#0;class#Test#0" />
-            <element signature="method#testMethodgetPatterns2#0;class#Test#0" />
-            <element signature="method#testMethodGetLang#0;class#Test#0" />
-            <element signature="method#testMethodGetLang2#0;class#Test#0" />
-            <element signature="method#testMethodGenerate#0;class#Test#0" />
-            <element signature="method#testControllerFieldSelf#0;class#Test#0" />
-            <element signature="method#testController#0;class#Test#0" />
-            <element signature="e#2898#2899#0" expanded="true" />
-            <element signature="e#2943#2944#0" expanded="true" />
+            <element signature="method#Controller#0;class#Controller#0" />
+            <element signature="method#initialize#0;class#Controller#0" />
+            <element signature="method#setText#0;class#Controller#0" />
+            <element signature="e#1350#1351#0" expanded="true" />
+            <element signature="e#1424#1425#0" expanded="true" />
+            <element signature="method#generateButtonAction#0;class#Controller#0" />
+            <element signature="e#1705#1706#0" expanded="true" />
           </folding>
         </state>
       </provider>

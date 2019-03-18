@@ -18,6 +18,7 @@ public class Controller {
     public static Controller self;
 
     public TextArea codeViewer;
+    public String stockText;
 
     public Button generateCode;
 
@@ -44,7 +45,18 @@ public class Controller {
 
     public void setText(String code) {
 
-        this.codeViewer.setText( code );
+        this.stockText = code;
+        code = code.replaceAll(";", ";\n");
+        code = code.replaceAll("\\{", "\n { \n");
+        code = code.replaceAll("\\}", " } \n\n");
+
+        String[] words = code.split(" ");
+
+        for( String word: words ){
+
+            this.codeViewer.appendText(word);
+
+        }
 
     }
 

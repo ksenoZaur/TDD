@@ -87,7 +87,7 @@ class TestGeneratorAndController {
     }
 
     @Test
-    public String testMethodGenerate() throws Exception{
+    public void testMethodGenerate() {
 
         Generator object = new Generator();
 
@@ -97,26 +97,34 @@ class TestGeneratorAndController {
 
         String expected = this.readFromFile("src/sample/input/00.txt").trim();
 
-        if( !code.equals( expected ) ){
-            throw new Exception("Ошибка!");
-        }
-
-        return code;
+        Assertions.assertEquals(expected, code);
 
     }
 
     @Test
-    public void testControllerFieldSelf() throws Exception{
+    public void testControllerFieldSelf() {
 
-        String code = this.testMethodGenerate();
+        new Thread(new Runnable() {
+            @Override
+            public void run() {
+                Main.main(null);
+            }
+        }).start();
+
+        try {
+            Thread.sleep(1000);
+        } catch (InterruptedException e) {
+            e.printStackTrace();
+        }
+        Generator generator = new Generator();
+
+        String code = generator.generate(0, 0);
 
         Controller.self.setText( code );
 
         String result = Controller.self.getTextFromTextArea();
 
-        if( !result.equals( code ) ){
-            throw new Exception("Ошибка!");
-        }
+        Assertions.assertEquals(code, result);
 
     }
 
@@ -125,6 +133,7 @@ class TestGeneratorAndController {
 
         Controller.self.getGenerateCode().getOnAction().handle( new ActionEvent() );
         Controller.self.getComboBoxPattern().getSelectionModel().select("Adapter");
+
     }
 
     @Test
