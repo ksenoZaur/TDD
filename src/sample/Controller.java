@@ -61,7 +61,7 @@ public class Controller {
     }
 
     public String getTextFromTextArea() {
-        return this.codeViewer.getText();
+        return this.stockText;
     }
 
     public Button getGenerateCode() {
