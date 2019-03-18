@@ -1,13 +1,10 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="cdb932d9-7e58-4d94-93a9-e7b232ef17da" name="Default" comment="Добавлена генерация кода Adapter для C#">
+    <list default="true" id="cdb932d9-7e58-4d94-93a9-e7b232ef17da" name="Default" comment="Тест на вывод кода Adapter для C# в TextArea">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/out/production/TDD/sample/Controller.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/TDD/sample/Controller.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/TDD/sample/Main.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/TDD/sample/Main.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/TDD/sample/sample.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/TDD/sample/sample.fxml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/sample/Controller.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/sample/Controller.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/sample/Test.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/sample/Test.java" afterDir="false" />
     </list>
     <ignored path="JavaFxApplication.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -64,7 +61,7 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file pinned="false" current-in-tab="false">
+      <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/sample/Main.java">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="185">
@@ -77,21 +74,21 @@
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="true">
+      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/sample/Controller.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="95">
-              <caret line="67" column="38" selection-start-line="67" selection-start-column="38" selection-end-line="67" selection-end-column="38" />
+            <state relative-caret-position="182">
+              <caret line="91" lean-forward="true" selection-start-line="91" selection-end-line="91" />
               <folding>
                 <element signature="imports" expanded="true" />
                 <element signature="method#Controller#0;class#Controller#0" />
+                <element signature="method#initialize#0;class#Controller#0" />
                 <element signature="e#1088#1137#1" />
                 <element signature="e#1801#1802#0" expanded="true" />
                 <element signature="e#1175#1211#1" />
                 <element signature="e#1875#1876#0" expanded="true" />
-                <element signature="method#generateButtonAction#0;class#Controller#0" />
                 <element signature="e#1453#1492#1" />
-                <element signature="e#2155#2156#0" expanded="true" />
+                <element signature="e#2215#2216#0" expanded="true" />
               </folding>
             </state>
           </provider>
@@ -100,8 +97,8 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/sample/Test.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="151">
-              <caret line="176" column="77" selection-start-line="176" selection-start-column="77" selection-end-line="176" selection-end-column="77" />
+            <state relative-caret-position="297">
+              <caret line="178" column="57" selection-start-line="178" selection-start-column="57" selection-end-line="178" selection-end-column="57" />
               <folding>
                 <element signature="imports" expanded="true" />
                 <element signature="method#readFromFile#0;class#Test#0" />
@@ -121,9 +118,9 @@
                 <element signature="class#3089:3212" />
                 <element signature="e#3380#3381#0" expanded="true" />
                 <element signature="e#3427#3428#0" expanded="true" />
-                <marker date="1552888341985" expanded="false" signature="2355:2644" ph="..." />
-                <marker date="1552888341985" expanded="false" signature="2954:3237" ph="..." />
-                <marker date="1552888341985" expanded="false" signature="3462:3751" ph="..." />
+                <marker date="1552888361045" expanded="false" signature="2355:2644" ph="..." />
+                <marker date="1552888361045" expanded="false" signature="2954:3237" ph="..." />
+                <marker date="1552888361045" expanded="false" signature="3462:3751" ph="..." />
               </folding>
             </state>
           </provider>
@@ -242,7 +239,7 @@
     <property name="Repository.Attach.Sources" value="false" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
-    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1552888366224" />
+    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1552888504767" />
     <property name="com.intellij.testIntegration.createTest.CreateTestDialog.defaultLibrary" value="JUnit4" />
     <property name="com.intellij.testIntegration.createTest.CreateTestDialog.defaultLibrarySuperClass.Arquillian JUnit4" value="" />
     <property name="com.intellij.testIntegration.createTest.CreateTestDialog.defaultLibrarySuperClass.JUnit4" value="" />
@@ -274,7 +271,7 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="JUnit.TestGeneratorAndController.testController2">
+  <component name="RunManager" selected="Application.Main">
     <configuration default="true" type="DartUnitRunConfigurationType" factoryName="DartUnit">
       <option name="VMOptions" />
       <option name="arguments" />
@@ -469,7 +466,7 @@
       <workItem from="1552201932946" duration="8151000" />
       <workItem from="1552576157422" duration="38000" />
       <workItem from="1552807862765" duration="1706000" />
-      <workItem from="1552828662811" duration="21733000" />
+      <workItem from="1552828662811" duration="21979000" />
     </task>
     <task id="LOCAL-00001" summary="Созданы классы Test и генератор">
       <created>1552809188480</created>
@@ -730,22 +727,17 @@
       <option name="project" value="LOCAL" />
       <updated>1552888112949</updated>
     </task>
-    <option name="localTasksCounter" value="38" />
+    <task id="LOCAL-00038" summary="Тест на вывод кода Adapter для C# в TextArea">
+      <created>1552888410954</created>
+      <option name="number" value="00038" />
+      <option name="presentableId" value="LOCAL-00038" />
+      <option name="project" value="LOCAL" />
+      <updated>1552888410954</updated>
+    </task>
+    <option name="localTasksCounter" value="39" />
     <servers />
   </component>
   <component name="TestHistory">
-    <history-entry file="TestGeneratorAndController_testMethodGetLang2 - 2019.03.18 at 12h 08m 40s.xml">
-      <configuration name="TestGeneratorAndController.testMethodGetLang2" configurationId="JUnit" />
-    </history-entry>
-    <history-entry file="TestGeneratorAndController_testMethodGetLang2 - 2019.03.18 at 12h 10m 00s.xml">
-      <configuration name="TestGeneratorAndController.testMethodGetLang2" configurationId="JUnit" />
-    </history-entry>
-    <history-entry file="TestGeneratorAndController_testMethodGetLang2 - 2019.03.18 at 12h 11m 19s.xml">
-      <configuration name="TestGeneratorAndController.testMethodGetLang2" configurationId="JUnit" />
-    </history-entry>
-    <history-entry file="TestGeneratorAndController_testMethodGetLang2 - 2019.03.18 at 12h 11m 45s.xml">
-      <configuration name="TestGeneratorAndController.testMethodGetLang2" configurationId="JUnit" />
-    </history-entry>
     <history-entry file="TestGeneratorAndController_testMethodGetLang2 - 2019.03.18 at 12h 12m 41s.xml">
       <configuration name="TestGeneratorAndController.testMethodGetLang2" configurationId="JUnit" />
     </history-entry>
@@ -764,9 +756,21 @@
     <history-entry file="TestGeneratorAndController_testMethodGenerate - 2019.03.18 at 12h 48m 04s.xml">
       <configuration name="TestGeneratorAndController.testMethodGenerate" configurationId="JUnit" />
     </history-entry>
+    <history-entry file="TestGeneratorAndController_testController2 - 2019.03.18 at 12h 52m 46s.xml">
+      <configuration name="TestGeneratorAndController.testController2" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="TestGeneratorAndController_testController2 - 2019.03.18 at 12h 54m 44s.xml">
+      <configuration name="TestGeneratorAndController.testController2" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="TestGeneratorAndController_testController2 - 2019.03.18 at 12h 54m 52s.xml">
+      <configuration name="TestGeneratorAndController.testController2" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="TestGeneratorAndController_testController2 - 2019.03.18 at 12h 54m 58s.xml">
+      <configuration name="TestGeneratorAndController.testController2" configurationId="JUnit" />
+    </history-entry>
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="41790000" />
+    <option name="totallyTimeSpent" value="42036000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1382" height="744" extended-state="6" />
@@ -781,7 +785,7 @@
       <window_info id="UI Designer" order="6" />
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Find" order="1" />
-      <window_info active="true" anchor="bottom" id="Run" order="2" visible="true" weight="0.26841244" />
+      <window_info active="true" anchor="bottom" id="Run" order="2" visible="true" weight="0.3846154" />
       <window_info anchor="bottom" id="Debug" order="3" weight="0.30441898" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
@@ -852,7 +856,6 @@
   <component name="VcsManagerConfiguration">
     <option name="OFFER_MOVE_TO_ANOTHER_CHANGELIST_ON_PARTIAL_COMMIT" value="true" />
     <option name="INCLUDE_TEXT_INTO_SHELF" value="false" />
-    <MESSAGE value="Тесты теперь более корректны" />
     <MESSAGE value="Тест метода generate()" />
     <MESSAGE value="Добавлен метод generate(int, int) + TODO" />
     <MESSAGE value="Тестируем generate(int, int) на возвращаемое значение" />
@@ -877,7 +880,8 @@
     <MESSAGE value="Добавлен язык C# в список языков" />
     <MESSAGE value="Тест на генерацию кода Adapter для C#" />
     <MESSAGE value="Добавлена генерация кода Adapter для C#" />
-    <option name="LAST_COMMIT_MESSAGE" value="Добавлена генерация кода Adapter для C#" />
+    <MESSAGE value="Тест на вывод кода Adapter для C# в TextArea" />
+    <option name="LAST_COMMIT_MESSAGE" value="Тест на вывод кода Adapter для C# в TextArea" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
@@ -952,17 +956,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/sample/Main.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="185">
-          <caret line="11" selection-start-line="11" selection-end-line="11" />
-          <folding>
-            <element signature="imports" expanded="true" />
-            <element signature="method#start#0;class#Main#0" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/sample/sample.fxml">
       <provider editor-type-id="JavaFX-Scene-Builder" />
       <provider selected="true" editor-type-id="text-editor">
@@ -983,8 +976,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/sample/Test.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="151">
-          <caret line="176" column="77" selection-start-line="176" selection-start-column="77" selection-end-line="176" selection-end-column="77" />
+        <state relative-caret-position="297">
+          <caret line="178" column="57" selection-start-line="178" selection-start-column="57" selection-end-line="178" selection-end-column="57" />
           <folding>
             <element signature="imports" expanded="true" />
             <element signature="method#readFromFile#0;class#Test#0" />
@@ -1004,27 +997,38 @@
             <element signature="class#3089:3212" />
             <element signature="e#3380#3381#0" expanded="true" />
             <element signature="e#3427#3428#0" expanded="true" />
-            <marker date="1552888341985" expanded="false" signature="2355:2644" ph="..." />
-            <marker date="1552888341985" expanded="false" signature="2954:3237" ph="..." />
-            <marker date="1552888341985" expanded="false" signature="3462:3751" ph="..." />
+            <marker date="1552888361045" expanded="false" signature="2355:2644" ph="..." />
+            <marker date="1552888361045" expanded="false" signature="2954:3237" ph="..." />
+            <marker date="1552888361045" expanded="false" signature="3462:3751" ph="..." />
           </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/sample/Controller.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="95">
-          <caret line="67" column="38" selection-start-line="67" selection-start-column="38" selection-end-line="67" selection-end-column="38" />
+        <state relative-caret-position="182">
+          <caret line="91" lean-forward="true" selection-start-line="91" selection-end-line="91" />
           <folding>
             <element signature="imports" expanded="true" />
             <element signature="method#Controller#0;class#Controller#0" />
+            <element signature="method#initialize#0;class#Controller#0" />
             <element signature="e#1088#1137#1" />
             <element signature="e#1801#1802#0" expanded="true" />
             <element signature="e#1175#1211#1" />
             <element signature="e#1875#1876#0" expanded="true" />
-            <element signature="method#generateButtonAction#0;class#Controller#0" />
             <element signature="e#1453#1492#1" />
-            <element signature="e#2155#2156#0" expanded="true" />
+            <element signature="e#2215#2216#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/sample/Main.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="185">
+          <caret line="11" selection-start-line="11" selection-end-line="11" />
+          <folding>
+            <element signature="imports" expanded="true" />
+            <element signature="method#start#0;class#Main#0" />
           </folding>
         </state>
       </provider>

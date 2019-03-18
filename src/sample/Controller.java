@@ -87,7 +87,7 @@ public class Controller {
     public void generateButtonAction(ActionEvent actionEvent) {
         //TODO Добавить функционал в метод
 
-        String code = this.generator.generate(0,0);
+        String code = this.generator.generate(0,this.comboBoxLanguages.getSelectionModel().getSelectedIndex());
         this.setText( code );
 
     }
