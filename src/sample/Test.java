@@ -92,9 +92,7 @@ class TestGeneratorAndController {
         object.generate(0, 0);
 
         String code = object.generate(0,0);
-
         String expected = this.readFromFile("src/sample/input/00.txt").trim();
-
         Assertions.assertEquals(expected, code);
 
         // C#
@@ -108,6 +106,22 @@ class TestGeneratorAndController {
         expected = this.readFromFile("src/sample/input/02.txt").trim();
         Assertions.assertEquals(expected, code);
 
+        // Паттерн Proxy
+        // Java
+        code = object.generate(1,0);
+        expected = this.readFromFile("src/sample/input/10.txt").trim();
+        Assertions.assertEquals(expected, code);
+
+        // C#
+        code = object.generate(1,1);
+        expected = this.readFromFile("src/sample/input/11.txt").trim();
+        Assertions.assertEquals(expected, code);
+
+        // JavaScript
+
+        code = object.generate(1, 2);
+        expected = this.readFromFile("src/sample/input/12.txt").trim();
+        Assertions.assertEquals(expected, code);
     }
 
     @Test
