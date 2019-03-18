@@ -8,7 +8,7 @@ public class Generator {
 
     public ArrayList<String> getPatterns() {
         //TODO Добавить поддержку других паттернов
-        return  new ArrayList<>() {{ add("Adapter"); }};
+        return  new ArrayList<>() {{ add("Adapter"); add("Proxy");}};
     }
 
     public ArrayList<String> getLanguages() {
