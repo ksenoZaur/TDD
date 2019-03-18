@@ -12,7 +12,7 @@ public class Generator {
 
     public Map<Integer, String> getLanguages() {
         //TODO Добавить поддержку других языков
-        return  Map.of(0, "Java");
+        return  Map.of(0, "Java", 1, "C#");
     }
 
     public String generate(int pattern, int language) {
