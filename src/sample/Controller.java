@@ -31,6 +31,10 @@ public class Controller {
 
     }
 
+    public ComboBox getComboBoxLanguages() {
+        return comboBoxLanguages;
+    }
+
     @FXML
     public void initialize() {
 
@@ -61,13 +65,14 @@ public class Controller {
         code = code.replaceAll("\\{", "\n { \n");
         code = code.replaceAll("\\}", " } \n\n");
 
-        String[] words = code.split(" ");
-
-        for( String word: words ){
-
-            this.codeViewer.appendText(word);
-
-        }
+        this.codeViewer.setText( code );
+//        String[] words = code.split(" ");
+//
+//        for( String word: words ){
+//
+//            this.codeViewer.appendText(word);
+//
+//        }
 
     }
 

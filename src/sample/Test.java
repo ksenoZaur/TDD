@@ -168,9 +168,16 @@ class TestGeneratorAndController {
         }
 
         Controller.self.getComboBoxPattern().getSelectionModel().select("Adapter");
+        Controller.self.getComboBoxLanguages().getSelectionModel().select("Java");
         Controller.self.getGenerateCode().getOnAction().handle( new ActionEvent() );
         String expected = this.readFromFile("src/sample/input/00.txt").trim();
         String actual = Controller.self.getTextFromTextArea();
+        Assertions.assertEquals(expected, actual);
+
+        Controller.self.getComboBoxLanguages().getSelectionModel().select("C#");
+        Controller.self.getGenerateCode().getOnAction().handle( new ActionEvent() );
+        expected = this.readFromFile("src/sample/input/01.txt").trim();
+        actual = Controller.self.getTextFromTextArea();
         Assertions.assertEquals(expected, actual);
 
     }
