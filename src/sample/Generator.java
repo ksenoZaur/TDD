@@ -8,12 +8,12 @@ public class Generator {
 
     public ArrayList<String> getPatterns() {
         //TODO Добавить поддержку других паттернов
-        return  new ArrayList<String>() {{ add("Adapter"); }};
+        return  new ArrayList<>() {{ add("Adapter"); }};
     }
 
     public ArrayList<String> getLanguages() {
         //TODO Добавить поддержку других языков
-        return  new ArrayList<String>() {{ add("Java"); add("C#"); }};
+        return  new ArrayList<>() {{ add("Java"); add("C#"); add("JavaScript");}};
     }
 
     public String generate(int pattern, int language) {
