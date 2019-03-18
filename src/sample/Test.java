@@ -7,6 +7,7 @@ import java.io.IOException;
 import java.nio.charset.StandardCharsets;
 import java.nio.file.Files;
 import java.nio.file.Paths;
+import java.util.ArrayList;
 import java.util.Map;
 
 import javafx.stage.Stage;
@@ -44,16 +45,16 @@ class TestGeneratorAndController {
     public void testMethodgetPatterns(){
 
         Generator object = new Generator();
-        Map<Integer, String> patterns = object.getPatterns();
+        ArrayList<String> patterns = object.getPatterns();
 
     }
 
     @Test
-    public void testMethodgetPatterns2() throws Exception{
+    public void testMethodgetPatterns2() {
 
         Generator object = new Generator();
 
-        Map<Integer, String> patterns = object.getPatterns();
+        ArrayList<String> patterns = object.getPatterns();
 
         Assertions.assertEquals("Adapter", patterns.get(0));
 
@@ -64,7 +65,7 @@ class TestGeneratorAndController {
 
         Generator object = new Generator();
 
-        Map<Integer, String> languages = object.getLanguages();
+        ArrayList<String> languages = object.getLanguages();
 
     }
 
@@ -73,7 +74,7 @@ class TestGeneratorAndController {
 
         Generator object = new Generator();
 
-        Map<Integer, String> languages = object.getLanguages();
+        ArrayList<String> languages = object.getLanguages();
 
         Assertions.assertEquals("Java", languages.get(0));
         Assertions.assertEquals("C#", languages.get(1));
@@ -82,6 +83,8 @@ class TestGeneratorAndController {
     @Test
     public void testMethodGenerate() {
 
+        // Паттерн Adapter
+        // Java
         Generator object = new Generator();
 
         object.generate(0, 0);
@@ -91,6 +94,12 @@ class TestGeneratorAndController {
         String expected = this.readFromFile("src/sample/input/00.txt").trim();
 
         Assertions.assertEquals(expected, code);
+
+        // C#
+        code = object.generate(0,1);
+        expected = this.readFromFile("src/sample/input/01.txt").trim();
+        Assertions.assertEquals(expected, code);
+
 
     }
 

@@ -8,8 +8,7 @@ import javafx.scene.control.Button;
 import javafx.scene.control.ComboBox;
 import javafx.scene.control.TextArea;
 
-import java.util.HashMap;
-import java.util.Map;
+import java.util.*;
 
 public class Controller {
 
@@ -21,6 +20,7 @@ public class Controller {
     public String stockText;
 
     public Button generateCode;
+    public ComboBox comboBoxLanguages;
 
     Generator generator;
 
@@ -34,11 +34,22 @@ public class Controller {
     @FXML
     public void initialize() {
 
-        Map<Integer, String> patternsList = this.generator.getPatterns();
+        ArrayList<String> patternsList = this.generator.getPatterns();
 
-        for ( Integer key: patternsList.keySet() ) {
+        int key = 0;
+        for ( String capture: patternsList ) {
+            ObservableList a = comboBoxPattern.getItems();
+            a.add(key, capture);
+            key++;
+        }
 
-            comboBoxPattern.getItems().add(key, patternsList.get( key ));
+        ArrayList<String> languagesList = this.generator.getLanguages();
+
+        key = 0;
+        for ( String capture: languagesList) {
+            ObservableList a = comboBoxLanguages.getItems();
+            a.add(key, capture);
+            key++;
         }
 
     }
@@ -79,4 +90,6 @@ public class Controller {
     public ComboBox getComboBoxPattern() {
         return comboBoxPattern;
     }
+
+
 }

@@ -1,18 +1,19 @@
 package sample;
 
+import java.util.ArrayList;
 import java.util.HashMap;
 import java.util.Map;
 
 public class Generator {
 
-    public Map<Integer, String> getPatterns() {
+    public ArrayList<String> getPatterns() {
         //TODO Добавить поддержку других паттернов
-        return  Map.of(0, "Adapter");
+        return  new ArrayList<String>() {{ add("Adapter"); }};
     }
 
-    public Map<Integer, String> getLanguages() {
+    public ArrayList<String> getLanguages() {
         //TODO Добавить поддержку других языков
-        return  Map.of(0, "Java", 1, "C#");
+        return  new ArrayList<String>() {{ add("Java"); add("C#"); }};
     }
 
     public String generate(int pattern, int language) {
