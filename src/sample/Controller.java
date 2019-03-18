@@ -68,7 +68,6 @@ public class Controller {
         return generateCode;
     }
 
-
     public void generateButtonAction(ActionEvent actionEvent) {
         //TODO Добавить функционал в метод
 

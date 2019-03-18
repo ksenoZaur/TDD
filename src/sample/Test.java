@@ -44,7 +44,6 @@ class TestGeneratorAndController {
     public void testMethodgetPatterns(){
 
         Generator object = new Generator();
-
         Map<Integer, String> patterns = object.getPatterns();
 
     }
@@ -56,10 +55,7 @@ class TestGeneratorAndController {
 
         Map<Integer, String> patterns = object.getPatterns();
 
-        if( !patterns.get(0).equals("Adapter") ){
-
-            throw new Exception("Ошибка!");
-        }
+        Assertions.assertEquals("Adapter", patterns.get(0));
 
     }
 
@@ -73,17 +69,14 @@ class TestGeneratorAndController {
     }
 
     @Test
-    public void testMethodGetLang2() throws Exception{
+    public void testMethodGetLang2() {
 
         Generator object = new Generator();
 
         Map<Integer, String> languages = object.getLanguages();
 
-        if( !languages.get(0).equals("Java") ){
-
-            throw new Exception("Ошибка!");
-        }
-
+        Assertions.assertEquals("Java", languages.get(0));
+        Assertions.assertEquals("C#", languages.get(1));
     }
 
     @Test
@@ -131,6 +124,19 @@ class TestGeneratorAndController {
     @Test
     public void testController(){
 
+        new Thread(new Runnable() {
+            @Override
+            public void run() {
+                Main.main(null);
+            }
+        }).start();
+
+        try {
+            Thread.sleep(1000);
+        } catch (InterruptedException e) {
+            e.printStackTrace();
+        }
+
         Controller.self.getGenerateCode().getOnAction().handle( new ActionEvent() );
         Controller.self.getComboBoxPattern().getSelectionModel().select("Adapter");
 
@@ -159,5 +165,7 @@ class TestGeneratorAndController {
         Assertions.assertEquals(expected, actual);
 
     }
+
+
 
 }
