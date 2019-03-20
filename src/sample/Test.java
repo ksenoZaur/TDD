@@ -2,15 +2,12 @@ package sample;
 
 import javafx.event.ActionEvent;
 
-import java.io.FileInputStream;
 import java.io.IOException;
 import java.nio.charset.StandardCharsets;
 import java.nio.file.Files;
 import java.nio.file.Paths;
 import java.util.ArrayList;
-import java.util.Map;
 
-import javafx.stage.Stage;
 import org.junit.jupiter.api.Assertions;
 import org.junit.jupiter.api.Test;
 
@@ -58,6 +55,7 @@ class TestGeneratorAndController {
 
         Assertions.assertEquals("Adapter", patterns.get(0));
         Assertions.assertEquals("Proxy", patterns.get(1));
+        Assertions.assertEquals("Decorator", patterns.get(2));
 
     }
 
