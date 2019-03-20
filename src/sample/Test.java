@@ -135,6 +135,22 @@ class TestGeneratorAndController {
         expected = this.readFromFile("src/sample/input/22.txt").trim();
         Assertions.assertEquals(expected, code);
 
+        // Паттерн Composite
+        // Java
+        code = object.generate(3,0);
+        expected = this.readFromFile("src/sample/input/30.txt").trim();
+        Assertions.assertEquals(expected, code);
+
+        // C#
+        code = object.generate(3,1);
+        expected = this.readFromFile("src/sample/input/31.txt").trim();
+        Assertions.assertEquals(expected, code);
+
+        // JavaScript
+        code = object.generate(3, 2);
+        expected = this.readFromFile("src/sample/input/32.txt").trim();
+        Assertions.assertEquals(expected, code);
+
     }
 
     @Test
