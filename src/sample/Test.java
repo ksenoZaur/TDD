@@ -56,7 +56,7 @@ class TestGeneratorAndController {
         Assertions.assertEquals("Adapter", patterns.get(0));
         Assertions.assertEquals("Proxy", patterns.get(1));
         Assertions.assertEquals("Decorator", patterns.get(2));
-
+        Assertions.assertEquals("Composite", patterns.get(3));
     }
 
     @Test
