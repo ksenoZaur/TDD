@@ -1,5 +1,6 @@
 package sample;
 
+import com.jfoenix.controls.JFXButton;
 import javafx.collections.FXCollections;
 import javafx.collections.ObservableList;
 import javafx.event.ActionEvent;
@@ -36,6 +37,8 @@ public class Controller {
 
     public Button generateCode;
     public ComboBox comboBoxLanguages;
+    public JFXButton save;
+    public JFXButton showImage;
 
     Generator generator;
 
@@ -207,6 +210,19 @@ public class Controller {
 
                 System.out.println(ex.getMessage());
             }
+        }
+
+    }
+
+    public void comboBoxChange(ActionEvent actionEvent) {
+
+        if ( !this.comboBoxPattern.getSelectionModel().isEmpty() &&
+                !this.comboBoxPattern.getSelectionModel().isEmpty() ) {
+
+            this.save.setDisable( false );
+            this.showImage.setDisable( false );
+            this.generateCode.setDisable( false );
+
         }
 
     }
